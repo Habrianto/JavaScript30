@@ -62,11 +62,10 @@
     const bingkai = document.querySelectorAll('.controls input')
     
    
-    bingkai.forEach(input => input.addEventListener('input', function(){
+      bingkai.forEach(i => i.addEventListener('input', function(){
       const px = this.dataset.sizing || '';
       document.documentElement.style.setProperty(`--${this.name}`, this.value + px)
     }))
-    
   </script>
 
 
