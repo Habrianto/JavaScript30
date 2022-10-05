@@ -2,10 +2,8 @@ const jarumDetik = document.querySelector('.second-hand')
 const jarumMenit = document.querySelector('.min-hand')
 const jarumJam = document.querySelector('.hour-hand')
 
-
 function jam() {
    const terkini = new Date()
-
    // detik
    const detik = terkini.getSeconds()
    const derajatDetik = ((detik / 60) * 360) + 90
